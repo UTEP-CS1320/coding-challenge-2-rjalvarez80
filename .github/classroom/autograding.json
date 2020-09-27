@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "Normal (Edge case)",
+      "setup": "g++ -o main main.c",
+      "run": "./main",
+      "input": "119 79",
+      "output": "Normal",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Elevated (Edge Case Low)",
+      "setup": "g++ -o main main.c",
+      "run": "./main",
+      "input": "120 79",
+      "output": "Elevated",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Elevated (Edge Case High)",
+      "setup": "g++ -o main main.c",
+      "run": "./main",
+      "input": "129 79",
+      "output": "Elevated",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 1 Hypertension (S-D-)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "130 79",
+      "output": "Stage 1 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 1 Hypertension (S+D-)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "139 80",
+      "output": "Stage 1 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 1 Hypertension (D+)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "120 85",
+      "output": "Stage 1 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 2 Hypertension (S)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "140 80",
+      "output": "Stage 2 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 2 Hypertension (D)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "120 90",
+      "output": "Stage 2 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Hypertensive Crysis (S)",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "180 5",
+      "output": "Hypertensive Crysis",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Hypertensive Crysis",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "140 120",
+      "output": "Hypertensive Crysis",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Error",
+      "setup": "gcc -o main main.c",
+      "run": "./main",
+      "input": "10 120",
+      "output": "ERROR",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
