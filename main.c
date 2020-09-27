@@ -12,13 +12,27 @@
 int main(void) {
   int s, d;
 
-  // Read Systolic and Diastolic pressure
-  scanf("%d %d", &s, &d);
+  scanf("%d %d", &s, &d);                   // Read Systolic and Diastolic pressure
 
-  // TODO: Complete the rest of the categories
-  if(s < 120) {
-    if(d < 80) {
-      printf("Normal\n");
-    }
+  if(s < d) {
+    printf("Error");
+  }
+  else if( (s < 120) && (d < 80) ) {
+    printf("Normal");
+  }
+  else if( (s < 130) && (d < 80) ) {
+   printf("Elevated");
+  }
+  else if( (s < 140) || (d < 90) {  
+    printf("Stage 1\nHypertension");
+  }
+  else if( (s > 180) || (d > 120)) {        // If we put Stage 2 first the program wouldn't know when s > 180 because it would execute at s > 140 without trying the 180.
+    printf("Hypertensive\nCrysis");
+  }
+  else if( (s >= 140) || (d >= 90)) {       // Equal signs are added after > so we can avoid the possible error of s = 140 and d = 90.
+    printf("Stage 2\nHypertension");
+  }
+  else {
+    printf("Missing case");
   }
 }
