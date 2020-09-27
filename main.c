@@ -24,15 +24,12 @@ int main(void) {
    printf("Elevated");
   }
   else if( (s < 140) || (d < 90)) {  
-    printf("Stage 1\nHypertension");
+    printf("Stage 1 Hypertension");
   }
   else if( (s > 180) || (d > 120)) {        // If we put Stage 2 first the program wouldn't know when s > 180 because it would execute at s > 140 without trying the 180.
-    printf("Hypertensive\nCrysis");
+    printf("Hypertensive Crysis");
   }
   else if( (s >= 140) || (d >= 90)) {       // Equal signs are added after > so we can avoid the possible error of s = 140 and d = 90.
-    printf("Stage 2\nHypertension");
-  }
-  else {
-    printf("Missing case");
+    printf("Stage 2 Hypertension");
   }
 }
