@@ -23,7 +23,7 @@ int main(void) {
   else if( (s < 130) && (d < 80) ) {
    printf("Elevated");
   }
-  else if( (s < 140) || (d < 90) {  
+  else if( (s < 140) || (d < 90)) {  
     printf("Stage 1\nHypertension");
   }
   else if( (s > 180) || (d > 120)) {        // If we put Stage 2 first the program wouldn't know when s > 180 because it would execute at s > 140 without trying the 180.
