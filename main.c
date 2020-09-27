@@ -23,7 +23,7 @@ int main(void) {
   else if( (s < 130) && (d < 80) ) {
    printf("Elevated");
   }
-    else if( (s > 180) || (d > 120)) {      /* We start from top to bottom because we are looking for s or d grater than a specific number. If the number is not big enought we
+    else if( (s >= 180) || (d >= 120)) {      /* We start from top to bottom because we are looking for s or d grater than a specific number. If the number is not big enought we
                           go to a lower number to see if it fall on the new calification. This is made so we don't have to specified ranges of evaluation on every if statemnt.*/
     printf("Hypertensive Crysis");
   }
@@ -33,5 +33,4 @@ int main(void) {
   else if( (s < 140) || (d < 90)) {  
     printf("Stage 1 Hypertension");
   }
-
 }
